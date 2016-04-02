@@ -1,0 +1,22 @@
+Date: 9/24/13
+
+Problem: I had trouble getting my seekbars to work properly. I had the correct
+value for the color, but it wasn't changing.
+
+Resources used: I went to professor vegdahl
+s office and he wlked me though it to get it working. Didn't take too much tweaking.
+
+
+Other Resources used (altogether):
+The only outside help (codewise) I recieve was looking at the Java/Android 
+API (A LOT).
+HOWEVER, I did however have to look at a specific code example for the alert
+dialogs I used for alert3x3() and alert5x5(). 
+The link is as follows: http://stackoverflow.com/questions/16191562/display-textview-in-alert-dialog
+
+Also: I found the "whoosh" noise at http://soundbible.com/2068-Woosh.html.
+It was created by Mark Diangelo.
+
+Also: I found the background music at http://gamethemesongs.com/.
+The group: Shark Attack Sound Team.
+Thtle: World of Wonders

@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res/cs301.jonesd14_hw2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray"
+    android:clickable="true"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity" >
+
+    <cs301.jonesd14_hw2.GridSurfaceView
+        android:id="@+id/gridSurfaceView"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:background="@color/purple" />
+
+    <LinearLayout
+        android:id="@+id/seekbarLayout"
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_below="@id/gridSurfaceView"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@+id/adjustColorLayout"
+        android:orientation="vertical" >
+
+        <SeekBar
+            android:id="@+id/redBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:max="255"
+            android:progress="255" />
+
+        <SeekBar
+            android:id="@+id/greenBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:max="255"
+            android:progress="255" />
+
+        <SeekBar
+            android:id="@+id/blueBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:max="255"
+            android:progress="255" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adjustColorLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seekbarLayout"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/seekbarLayout"
+        android:layout_centerInParent="false"
+        android:layout_marginRight="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/adjustRed"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/adjustRed"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/adjustGreen"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="@string/adjustGreen"
+            android:textColor="@color/green"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/adjustBlue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/adjustBlue"
+            android:textColor="@color/blue"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/buttonPressView"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:text="@string/pressCount"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/soundButton"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentTop="false"
+        android:layout_alignRight="@+id/miscButtonLayout"
+        android:layout_alignTop="@+id/gridSurfaceView"
+        android:background="@drawable/sound" />
+
+    <TextView
+        android:id="@+id/numSquares"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/gridSurfaceView"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="23dp"
+        android:text="@string/numSquaresText"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/gridButtonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/numSquares"
+        android:layout_alignRight="@+id/numSquares"
+        android:layout_below="@+id/numSquares" >
+
+        <Button
+            android:id="@+id/grid3x3Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/square3x3" />
+
+        <Button
+            android:id="@+id/grid5x5Button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:text="@string/square5x5" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/miscButtonLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="115dp"
+        android:layout_toRightOf="@+id/gridSurfaceView"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/resetButton"
+            android:layout_width="150dp"
+            android:layout_height="75dp"
+            android:text="@string/reset"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Jonesd14_hw2</string>
+    <string name="action_settings">Settings</string>
+    <string name="adjustRed">Adjust Red:</string>
+    <string name="adjustGreen">Adjust Green:</string>
+    <string name="adjustBlue">Adjust Blue:</string>
+    <string name="pressCount">Number of Button Presses:</string>
+    <string name="reset">Reset</string>
+    <string name="vibrate">Toggle Vibration</string>
+    <string name="square3x3">3x3</string>
+    <string name="square5x5">5x5</string>
+    <string name="numSquaresText">Number of Squares:</string>
+    <string name="areYouSureText">Are you sure you want to change the grid layout? (All progress will be lost)</string>
+
+</resources>

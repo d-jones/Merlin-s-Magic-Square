@@ -1,0 +1,161 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gray" >
+
+    <cs301.jonesd14_hw2.GridSurfaceView
+        android:id="@+id/gridSurfaceViewPort"
+        android:layout_width="500dp"
+        android:layout_height="500dp"
+        android:layout_alignParentTop="false"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="25dp"
+        android:background="@color/purple" />
+
+    <LinearLayout
+        android:id="@+id/seekbarLayoutPort"
+        android:layout_width="700dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/gridSurfaceViewPort"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@+id/gridSurfaceViewPort"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/adjustColorLayoutPort"
+        android:orientation="vertical" >
+
+        <SeekBar
+            android:id="@+id/redBarPort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:progress="255" />
+
+        <SeekBar
+            android:id="@+id/greenBarPort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:progress="255" />
+
+        <SeekBar
+            android:id="@+id/blueBarPort"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:max="255"
+            android:progress="255" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/adjustColorLayoutPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/seekbarLayoutPort"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/seekbarLayoutPort"
+        android:layout_marginLeft="10dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/adjustRedPort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/adjustRed"
+            android:textColor="@color/red"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/adjustGreenPort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:text="@string/adjustGreen"
+            android:textColor="@color/green"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/adjustBluePort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/adjustBlue"
+            android:textColor="@color/blue"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/soundButtonPort"
+        android:layout_width="64dp"
+        android:layout_height="64dp"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/gridSurfaceViewPort"
+        android:layout_marginRight="50dp"
+        android:background="@drawable/sound" />
+
+    <TextView
+        android:id="@+id/buttonPressViewPort"
+        android:layout_width="175dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/adjustColorLayoutPort"
+        android:layout_below="@+id/adjustColorLayoutPort"
+        android:layout_marginTop="75dp"
+        android:text="@string/pressCount"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <TextView
+        android:id="@+id/numSquaresPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/seekbarLayoutPort"
+        android:layout_alignTop="@+id/buttonPressViewPort"
+        android:layout_below="@+id/seekbarLayoutPort"
+        android:layout_marginBottom="10dp"
+        android:layout_marginRight="10dp"
+        android:text="@string/numSquaresText"
+        android:textColor="@color/white"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:id="@+id/gridButtonLayoutPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/numSquaresPort"
+        android:layout_below="@+id/numSquaresPort" >
+
+        <Button
+            android:id="@+id/grid3x3ButtonPort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/square3x3" />
+
+        <Button
+            android:id="@+id/grid5x5ButtonPort"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="42dp"
+            android:text="@string/square5x5" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/miscButtonLayoutPort"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="false"
+        android:layout_below="@+id/seekbarLayoutPort"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="325dp"
+        android:orientation="vertical" >
+
+        <Button
+            android:id="@+id/resetButtonPort"
+            android:layout_width="200dp"
+            android:layout_height="75dp"
+            android:text="@string/reset"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+</RelativeLayout>
